@@ -1,0 +1,3 @@
+NodeJS => is a runtime environment for javascript
+NodeJS => v8 engine + C++
+
