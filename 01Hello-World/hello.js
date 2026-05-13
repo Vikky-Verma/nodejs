@@ -20,12 +20,14 @@ console.log("hey there! I am JS");
 // then we can run the js file using npm start command in terminal like this: npm start
 
 
-const math = require("./math")  //this will import math.js file  when we calling we write like this math.add() and math.subtract() because we are importing whole math.js file
+// const math = require('./math')  //this will import math.js file  when we calling we write like this math.add() and math.subtract() because we are importing whole math.js file
+// console.log("Math Value is:", math.add(2,8))
+// console.log("Math Value is:", math.subtract(8,2))
 
-// const {add, subtract} = require("./math") // this is another way to import specific functions from math.js file when we calling we write like this add() and subtract() because we are importing specific functions from math.js file
+//we also destructuring the function export 
+const {add, subtract} = require("./math") // this is another way to import specific functions from math.js file when we calling we write like this add() and subtract() because we are importing specific functions from math.js file
 
-console.log("Math Value is:", math.add(2,8))
-console.log("Math Value is:", math.subtract(8,2))
+console.log("Math Value is: ", add(3,8))
 
 // all built module in node list
 // 1. fs module: to work with file system
