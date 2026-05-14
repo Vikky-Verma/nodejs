@@ -1,0 +1,8 @@
+1. express is a web framework for nodeJs
+2. basic syntax 
+app. METHOD(path, Handler)
+
+app is instance of express
+method is a http request method , in lowercase
+path is a path on a server 
+Handler is the function executed when the route is matched
