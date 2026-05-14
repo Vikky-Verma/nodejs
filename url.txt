@@ -1,0 +1,13 @@
+url => uniform resource locator
+url ==> https://www.piyushgarg.dev/
+## https:// => it is protocol set of rules 
+         Hypertext Transfer Protocol Secure
+
+## www.piyushgarg.dev => domain-user friendly name of IP Address of My Server
+## / => path
+
+## Query parameters
+piyushgarg.dev/about?userId=1&a=2  => in this line from question mark to end this is query parameter
+
+## for installing url module
+command => npm install url
