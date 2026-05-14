@@ -1,0 +1,8 @@
+NodeJS => is a runtime environment for javascript
+NodeJS => v8 engine + C++
+
+
+
+you can run js outside of the browser 
+javascript can talk to native machine because of c++
+you can create webserver in javascript language 

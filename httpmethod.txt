@@ -1,0 +1,3 @@
+HTTP Method => GET, POST, PUT, PATCH, DELETE
+1. httP GET => When you want to get some data from the server 
+2.HTTP POST => When you want to send and mutate some data in server

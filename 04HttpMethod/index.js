@@ -1,0 +1,43 @@
+// main file of the server folder
+
+const http = require("http") // this will import http module which is built in module in node.js
+const fs = require("fs") // this will import fs module which is built in module in node.js
+const url = require("url") // this will import url module which is built in module in node.js
+
+// how to make a own server using http module and how to handle different routes
+const myServer = http.createServer((req, res) => {
+    if (req.url === "/favicon.ico") return res.end();
+    const log = `${Date.now()}: ${req.method} ${req.url} - New Request Received\n`;
+    const myUrl = url.parse(req.url, true);
+    
+    fs.appendFile('log.txt',log, (err, data) => {
+        switch (myUrl.pathname){
+            case "/":
+               if (req.method === "GET") {
+                   res.end("HomePage");
+               }
+               break;
+            case "/about":
+                const username = myUrl.query.name ;
+                res.end(`Hi, ${username}!`);
+                break;
+            case "/search":
+                const search =myUrl.query.search_query;
+                res.end("Here are your results for " + search);
+                break;
+            case "/signup":
+                if (req.method === "GET") {
+                    res.end("This is a signup Form");
+                }
+                else if (req.method === "POST") {
+                    // DB Query 
+                    res.end("Success");
+                }
+                break;
+            default:
+                res.end("404 Not Found");   
+        }
+    });
+}); 
+
+myServer.listen(8000, () => console.log("Server Started!")); // this will start the server and listen on port 8000

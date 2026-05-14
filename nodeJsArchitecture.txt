@@ -1,0 +1,11 @@
+## client => send request to nodeJs server where  => event Queue => event Loop => process => give resopnse to client if the request is non blocking operation
+
+
+## when blocking operation event loop send  request to thread pool and thread pool assign a thread or worker it complete the process and return the response to the client 
+
+## nodeJs server include event queue and event loop and also thread pool event queue work like fifo order request goes to the event queue first then this request goes to event loop first for process and then return response to the user 
+
+
+## always prefer non blocking operation because if we prefer blocking operation then some user assign thread but all user not have suffient thread to assign thats why they will wait for the relese of thread or worker to do their process 
+
+
