@@ -1,0 +1,12 @@
+Restfull Api => based on server client architecture
+2. always respect all http methods
+   GET POST PUT PATCH DELETE
+   GET / User => users data read kro and return data
+   POST /User => handle new user creation 
+   PATCH /User => update  the user
+
+
+1. Client - Browser HTML 
+2.Respect http method 
+ res.send()
+ res.render()     res.JSON()
