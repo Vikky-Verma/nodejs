@@ -1,0 +1,6 @@
+Middleware => it is function handle request and response
+and next Middleware
+->Execute any code
+-> make change to the request and the response objects
+-> End the request-response cycle
+-> Call the next middleware function in the stack

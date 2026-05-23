@@ -1,0 +1,6 @@
+Command for mongodb
+1. show dbs
+2. use <db_name>
+3. show collections
+4. db.call.find()
+5. db.call.insert()
