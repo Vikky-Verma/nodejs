@@ -1,0 +1,24 @@
+Authentication Pattern
+1. Statefull => which maintains state or data or server side
+2. Stateless => which has no state
+
+Statefull
+client ---username/password-------> server
+server ------session uid ----------> client
+=> if user request any query to server it can pass his 
+query with his available session uid provided by the server
+=> like GET/users |uid:367
+=> this way server identifies the users 
+
+How uid transfer from server to client ?
+--> cookies
+--> response
+--> headers
+
+Express Flow
+client ------> auth middleware ----> endpoint route
+               checkes for cookie value
+               or uid , if valid calls 
+               next() else rejects the 
+               request
+
