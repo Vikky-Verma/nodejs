@@ -22,3 +22,18 @@ client ------> auth middleware ----> endpoint route
                next() else rejects the 
                request
 
+
+
+=>  Limitations of statefull authentication
+1. for some reason server restart , or state lost then all user logout form the server
+2. Menmory intesive ---> used memory of server, server have limited memory so that less menmory consumption should be used
+
+
+
+=>  Stateless Authentication
+In this authentication we generate a token in which we kept information of user whenever the user want to find the information/data then use this token to fetch , other user can read the data but cant manipulate 
+
+We use JWT =>JSON Web token, it contain three parts:
+1. headers
+2. payload 
+3. secret key

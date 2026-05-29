@@ -1,0 +1,10 @@
+Two ways to send the tokens
+1. cookies 
+2. Headers => json
+
+cookies :automatic, domain specific, 
+expiry date , 
+browser property not support android
+
+Headers:
+headers -> authorization bearer
