@@ -1,0 +1,2 @@
+Authentication => belong to particular application or mean to say to login
+Authorization => have the access to get the resource or not 
